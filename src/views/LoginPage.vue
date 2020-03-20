@@ -42,6 +42,7 @@
             <v-row style="position:absolute;bottom:2vh;right:6vw">
               <v-col cols="12">
                 <v-btn
+                  @click="$router.push('dashboard')"
                   rounded
                   outlined
                   dark

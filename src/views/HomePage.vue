@@ -8,22 +8,19 @@
       fixed
       app
       grow
-      background-color="#FFD838"
+      dark
+      style="border-style:inset;border-color:grey;background-color:black"
       height="48px"
     >
-      <v-btn text>
+      <v-btn text @click="$router.push('dashboard')">
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-btn text>
-        <v-icon>mdi-plus</v-icon>
+      <v-btn text @click="$router.push('notif')">
+        <v-icon>notifications_active</v-icon>
       </v-btn>
 
-      <v-btn text>
-        <v-icon>mdi-format-list-bulleted</v-icon>
-      </v-btn>
-
-      <v-btn text>
+      <v-btn text @click="$router.push('profile')">
         <v-icon>mdi-account</v-icon>
       </v-btn>
     </v-bottom-navigation>
